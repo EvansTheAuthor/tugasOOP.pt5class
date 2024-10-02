@@ -7,11 +7,11 @@ import java.io.FileNotFoundException;
 public class FileNotFound_demo {
     public static void main(String[] args) {
         File file=new File("E://file.txt");
-        try {
+        try { //mencoba mengakses path
             FileReader fr=new FileReader(file);
-        } catch (FileNotFoundException ex) {
+        } catch (FileNotFoundException ex) { //mencegah program berhenti berjalan dengan menampilkan spesifik masalah
             System.out.println("File not found: "+ex.getMessage());
-        }finally{System.out.println("PRocess is end.");}
+        }finally{System.out.println("Process is end.");}
         
     }
 }
