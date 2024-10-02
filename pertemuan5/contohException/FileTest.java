@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FileTest {
     public static void main(String[] args) {
-        try {
+        try { //mencoba membuat file baru
             File file=new File("D://test//testFile1.txt");
 
             if (file.createNewFile()) {
@@ -18,7 +18,7 @@ public class FileTest {
             FileWriter writer=new FileWriter(file);
             writer.write("Test data");
             writer.close();
-        } catch (IOException ex) {
+        } catch (IOException ex) { //mencegah program berhenti dengan menampilkan spesifik masalah
             System.out.println("Exception");
         }
     }
